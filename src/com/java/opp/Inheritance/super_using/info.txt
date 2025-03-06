@@ -1,0 +1,4 @@
+✅ Regras Importantes da Herança
+A subclasse herda todos os atributos e métodos não privados da superclasse.
+O Java não suporta herança múltipla (uma classe pode herdar apenas de uma única classe).
+Podemos usar super para acessar métodos ou construtores da superclasse.
