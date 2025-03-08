@@ -4,7 +4,7 @@ package com.java.opp.abs.domain;
     pra ser extendida
     Funcionario -->Template
  */
-public abstract class   Funcionario {
+public abstract class   Funcionario extends  Pessoa {
     protected  String nome;
     protected  double salary;
 
@@ -12,8 +12,15 @@ public abstract class   Funcionario {
 
         this.nome=nome;
         this.salary = salary;
+        calculaBonus();
     }
 
+    @Override
+    public void Imprimir() {
+            System.out.println("IMprimindo");
+    }
+
+    public abstract void calculaBonus();
 
 
 
