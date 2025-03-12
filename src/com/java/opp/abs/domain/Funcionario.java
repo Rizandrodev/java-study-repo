@@ -17,7 +17,7 @@ public abstract class   Funcionario extends  Pessoa {
 
     @Override
     public void Imprimir() {
-            System.out.println("IMprimindo");
+            System.out.println("Imprimindo");
     }
 
     public abstract void calculaBonus();
@@ -25,3 +25,10 @@ public abstract class   Funcionario extends  Pessoa {
 
 
 }
+
+/**
+ 
+  se tiver uma classe abstracta herdando outra 
+  classe abstracata pode hedar os metodos nao abstracatos
+  
+ */
