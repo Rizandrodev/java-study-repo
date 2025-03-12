@@ -1,34 +1,19 @@
 package com.java.opp.enums.domain;
 
 public class Client {
+
+    public enum  TipoPagamento{
+        DEBITO,CREDITO
+    }
+
     public String nome;
-
-
     private TipoCliente tipoCliente;
+    private  TipoPagamento tipoPagamento;
 
-    public Client(String nome,  TipoCliente tipoCliente) {
+    public Client(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento) {
         this.nome = nome;
         this.tipoCliente = tipoCliente;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-
-
-    public TipoCliente getTipoCliente() {
-        return tipoCliente;
-    }
-
-
-
-    public void setTipoCliente(TipoCliente tipoCliente) {
-        this.tipoCliente = tipoCliente;
+        this.tipoPagamento = tipoPagamento;
     }
 
     @Override
@@ -36,6 +21,9 @@ public class Client {
         return "Client{" +
                 "nome='" + nome + '\'' +
                 ", tipoCliente=" + tipoCliente +
+                ", tipoClienteInt=" + tipoCliente.getVALOR() +
+                ", tipoClienteInt=" + tipoCliente.getNomeRelatorio() +
+                ", tipoPagamento=" + tipoPagamento +
                 '}';
     }
 }
