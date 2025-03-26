@@ -3,3 +3,6 @@
 
    -- interfaces em java todos metodos sao interfaces e abstract
      nao usa-se extends mas sim implements
+
+
+   -- **vantagem** Mover inplemntacao para multiplas interfaces
