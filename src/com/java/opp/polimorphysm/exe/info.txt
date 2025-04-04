@@ -1,3 +1,0 @@
-Exercício Simples: Veículos
-Enunciado: Crie uma superclasse Veiculo com um método mover(). Crie duas subclasses Carro e
-Bicicleta que mudam o comportamento de mover(). Depois, crie um array de Veiculo com um Carro e uma Bicicleta e chame mover() para cada um.
