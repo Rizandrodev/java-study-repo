@@ -12,6 +12,14 @@ public  class CalculadoraImposto {
         System.out.println("computador"+product.getName());
         System.out.println("Valor"+product.getValue());
         System.out.println("Imposto a ser Pago"+imposto);
+
+        if(product instanceof Tomato){ //instanceof diz se product e uma instacia de Tomato
+            Tomato tomate=(Tomato) product;// () cast
+            //String dataValidade=((Tomato)product).getValidade();//Cast 2 ((Tomato)progunt).metod
+            System.out.println(tomate.getValidade());
+            //System.out.println(dataValidade);
+        }
+
     }
 }
-//Se nao estiver acessar atributos de classe posso deixar meu metodo estatico
+    //Se nao estiver acessar atributos de classe posso deixar meu metodo estatico

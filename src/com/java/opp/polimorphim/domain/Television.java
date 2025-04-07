@@ -5,10 +5,10 @@ public class Television extends Product{
     public Television(String name, double value) {
         super(name, value);
     }
-
     @Override
     public double calcularImposto() {
         System.out.println("Calculando imposto da Tv");
         return this.value*IMPOSTO_POR_CENTO;
     }
+
 }
