@@ -17,7 +17,7 @@ public class StringBuilderTest {
         sb.append(" Devdojo").append(" Academicy");
         sb.reverse();
         sb.reverse();
-        sb.delete();
+        //sb.delete();
         System.out.println(sb);
 
     }
